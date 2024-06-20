@@ -1,0 +1,20 @@
+
+  .switch input:checked + .slider {
+    background-color: #3c52c0; 
+  }
+
+  .switch input:checked + .slider:before {
+    transform: translateX(1.625rem); 
+  }
+
+  .switch .slider:before {
+    content: "";
+    position: absolute;
+    height: 1.5rem; 
+    width: 1.5rem; 
+    left: 0.125rem; 
+    bottom: 0.125rem; 
+    background-color: rgb(249, 242, 242);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 9999px;
+  }
